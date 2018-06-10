@@ -121,6 +121,7 @@ float vec3::sqr_len() const
 vec3& vec3::normalize()
 {
     *this /= len();
+    return *this;
 }
 
 vec3 vec3::unit() const
